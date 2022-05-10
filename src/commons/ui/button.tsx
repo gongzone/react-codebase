@@ -1,6 +1,8 @@
 import React, { HTMLAttributes, ReactNode } from 'react';
 import styled from 'styled-components';
 
+let s;
+
 export interface ButtonProps extends HTMLAttributes<HTMLButtonElement> {
   children: ReactNode;
   variant: 'primary' | 'secondary';

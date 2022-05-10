@@ -1,5 +1,5 @@
 const path = require('path');
-const custom = require('../webpack/webpack.common');
+// const custom = require('../webpack/webpack.common');
 
 module.exports = {
   stories: ['../src/**/*.stories.mdx', '../src/**/*.stories.@(js|jsx|ts|tsx)'],
@@ -13,7 +13,7 @@ module.exports = {
     builder: '@storybook/builder-webpack5',
   },
   typescript: { reactDocgen: false },
-  webpackFinal: async (config) => {
-    return { ...config };
-  },
+  // webpackFinal: async (config) => {
+  //   return { ...config };
+  // },
 };
