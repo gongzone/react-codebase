@@ -1,16 +1,19 @@
 {
   "name": "reactjs",
+  "private": true,
   "scripts": {
     "start": "webpack serve --config webpack/webpack.config.js --env env=dev",
     "build": "webpack --config webpack/webpack.config.js --env env=prod",
     "test": "jest --watchAll --verbose",
     "lint": "eslint --fix \"./src/**/*.{js,jsx,ts,tsx,json}\"",
     "format": "prettier --write \"./src/**/*.{js,jsx,ts,tsx,json,css,scss,md}\"",
-    "prepare": "husky install",
     "cy:open": "cypress open",
     "cy:run": "cypress run",
     "storybook": "start-storybook -p 6006",
-    "build-storybook": "build-storybook"
+    "build-storybook": "build-storybook",
+    "postinstall": "husky install",
+    "prepack": "pinst --disable",
+    "postpack": "pinst --enable"
   },
   "dependencies": {
     "jsdom": "^19.0.0",
@@ -62,11 +65,12 @@
     "eslint-plugin-react-hooks": "^4.5.0",
     "eslint-plugin-storybook": "^0.5.11",
     "html-webpack-plugin": "^5.5.0",
-    "husky": "^7.0.4",
+    "husky": "^8.0.0",
     "jest": "27.5.1",
     "jest-extended": "^2.0.0",
     "lint-staged": "^12.3.7",
     "mini-css-extract-plugin": "^2.6.0",
+    "pinst": "^3.0.0",
     "prettier": "^2.6.2",
     "react-is": "^18.1.0",
     "react-refresh": "^0.13.0",
