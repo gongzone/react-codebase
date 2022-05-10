@@ -1,5 +1,3 @@
-const { off } = require('process');
-
 module.exports = {
   parser: '@typescript-eslint/parser',
 
@@ -7,12 +5,6 @@ module.exports = {
     project: 'tsconfig.json',
     tsconfigRootDir: __dirname,
     sourceType: 'module',
-  },
-
-  settings: {
-    react: {
-      version: 'detect',
-    },
   },
 
   ignorePatterns: ['**/*.js', 'declarations.d.ts'],
@@ -47,11 +39,15 @@ module.exports = {
   },
 
   settings: {
+    react: {
+      version: 'detect',
+    },
     'import/resolver': {
       webpack: {
         config: 'webpack/webpack.common.js',
       },
     },
+    'import/ignore': 'node_modules',
   },
 
   overrides: [
