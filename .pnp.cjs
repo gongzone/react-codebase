@@ -76,12 +76,13 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["eslint-plugin-react-hooks", "virtual:d0462f4d45d190060ad2c218f496eba0b0e39b2c277fb32d8fbec802a5cf5dbeff970e85bef09ed059124f600357227a21741b182c62e69cfc4765edbedae80f#npm:4.5.0"],\
             ["eslint-plugin-storybook", "virtual:d0462f4d45d190060ad2c218f496eba0b0e39b2c277fb32d8fbec802a5cf5dbeff970e85bef09ed059124f600357227a21741b182c62e69cfc4765edbedae80f#npm:0.5.11"],\
             ["html-webpack-plugin", "virtual:d0462f4d45d190060ad2c218f496eba0b0e39b2c277fb32d8fbec802a5cf5dbeff970e85bef09ed059124f600357227a21741b182c62e69cfc4765edbedae80f#npm:5.5.0"],\
-            ["husky", "npm:7.0.4"],\
+            ["husky", "npm:8.0.1"],\
             ["jest", "virtual:d0462f4d45d190060ad2c218f496eba0b0e39b2c277fb32d8fbec802a5cf5dbeff970e85bef09ed059124f600357227a21741b182c62e69cfc4765edbedae80f#npm:27.5.1"],\
             ["jest-extended", "virtual:d0462f4d45d190060ad2c218f496eba0b0e39b2c277fb32d8fbec802a5cf5dbeff970e85bef09ed059124f600357227a21741b182c62e69cfc4765edbedae80f#npm:2.0.0"],\
             ["jsdom", "virtual:d0462f4d45d190060ad2c218f496eba0b0e39b2c277fb32d8fbec802a5cf5dbeff970e85bef09ed059124f600357227a21741b182c62e69cfc4765edbedae80f#npm:19.0.0"],\
             ["lint-staged", "npm:12.3.8"],\
             ["mini-css-extract-plugin", "virtual:d0462f4d45d190060ad2c218f496eba0b0e39b2c277fb32d8fbec802a5cf5dbeff970e85bef09ed059124f600357227a21741b182c62e69cfc4765edbedae80f#npm:2.6.0"],\
+            ["pinst", "npm:3.0.0"],\
             ["prettier", "npm:2.6.2"],\
             ["react", "npm:18.1.0"],\
             ["react-dom", "virtual:d0462f4d45d190060ad2c218f496eba0b0e39b2c277fb32d8fbec802a5cf5dbeff970e85bef09ed059124f600357227a21741b182c62e69cfc4765edbedae80f#npm:18.1.0"],\
@@ -15894,10 +15895,10 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]\
       ]],\
       ["husky", [\
-        ["npm:7.0.4", {\
-          "packageLocation": "./.yarn/cache/husky-npm-7.0.4-917ba035c6-c6ec4af63d.zip/node_modules/husky/",\
+        ["npm:8.0.1", {\
+          "packageLocation": "./.yarn/cache/husky-npm-8.0.1-85fede8470-943a73a13d.zip/node_modules/husky/",\
           "packageDependencies": [\
-            ["husky", "npm:7.0.4"]\
+            ["husky", "npm:8.0.1"]\
           ],\
           "linkType": "HARD"\
         }]\
@@ -20075,6 +20076,15 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "linkType": "HARD"\
         }]\
       ]],\
+      ["pinst", [\
+        ["npm:3.0.0", {\
+          "packageLocation": "./.yarn/cache/pinst-npm-3.0.0-5d2b6c1dda-4ae48a6a60.zip/node_modules/pinst/",\
+          "packageDependencies": [\
+            ["pinst", "npm:3.0.0"]\
+          ],\
+          "linkType": "HARD"\
+        }]\
+      ]],\
       ["pirates", [\
         ["npm:4.0.5", {\
           "packageLocation": "./.yarn/cache/pirates-npm-4.0.5-22f8e827ce-c9994e61b8.zip/node_modules/pirates/",\
@@ -21435,12 +21445,13 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["eslint-plugin-react-hooks", "virtual:d0462f4d45d190060ad2c218f496eba0b0e39b2c277fb32d8fbec802a5cf5dbeff970e85bef09ed059124f600357227a21741b182c62e69cfc4765edbedae80f#npm:4.5.0"],\
             ["eslint-plugin-storybook", "virtual:d0462f4d45d190060ad2c218f496eba0b0e39b2c277fb32d8fbec802a5cf5dbeff970e85bef09ed059124f600357227a21741b182c62e69cfc4765edbedae80f#npm:0.5.11"],\
             ["html-webpack-plugin", "virtual:d0462f4d45d190060ad2c218f496eba0b0e39b2c277fb32d8fbec802a5cf5dbeff970e85bef09ed059124f600357227a21741b182c62e69cfc4765edbedae80f#npm:5.5.0"],\
-            ["husky", "npm:7.0.4"],\
+            ["husky", "npm:8.0.1"],\
             ["jest", "virtual:d0462f4d45d190060ad2c218f496eba0b0e39b2c277fb32d8fbec802a5cf5dbeff970e85bef09ed059124f600357227a21741b182c62e69cfc4765edbedae80f#npm:27.5.1"],\
             ["jest-extended", "virtual:d0462f4d45d190060ad2c218f496eba0b0e39b2c277fb32d8fbec802a5cf5dbeff970e85bef09ed059124f600357227a21741b182c62e69cfc4765edbedae80f#npm:2.0.0"],\
             ["jsdom", "virtual:d0462f4d45d190060ad2c218f496eba0b0e39b2c277fb32d8fbec802a5cf5dbeff970e85bef09ed059124f600357227a21741b182c62e69cfc4765edbedae80f#npm:19.0.0"],\
             ["lint-staged", "npm:12.3.8"],\
             ["mini-css-extract-plugin", "virtual:d0462f4d45d190060ad2c218f496eba0b0e39b2c277fb32d8fbec802a5cf5dbeff970e85bef09ed059124f600357227a21741b182c62e69cfc4765edbedae80f#npm:2.6.0"],\
+            ["pinst", "npm:3.0.0"],\
             ["prettier", "npm:2.6.2"],\
             ["react", "npm:18.1.0"],\
             ["react-dom", "virtual:d0462f4d45d190060ad2c218f496eba0b0e39b2c277fb32d8fbec802a5cf5dbeff970e85bef09ed059124f600357227a21741b182c62e69cfc4765edbedae80f#npm:18.1.0"],\
