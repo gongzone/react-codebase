@@ -1,5 +1,6 @@
 const path = require('path');
 
+const webpack = require('webpack');
 const { ESBuildMinifyPlugin } = require('esbuild-loader');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
@@ -7,7 +8,7 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 module.exports = {
   // 엔트리 포인트는 webpack이 내부의 디펜던시 그래프 를 생성하기 위해 사용해야 하는 모듈을 의미
   entry: {
-    bundle: path.resolve(__dirname, '..', './src/index.ts'),
+    bundle: path.resolve(__dirname, '..', './src/index.tsx'),
   },
 
   output: {
@@ -71,13 +72,15 @@ module.exports = {
 
   plugins: [
     new HtmlWebpackPlugin({
-      title: 'Webpack Basic',
       filename: 'index.html',
-      template: 'src/templates/template.html',
+      template: path.resolve(__dirname, '..', './public/index.html'),
     }),
     new MiniCssExtractPlugin({
       filename: 'style.css',
       chunkFilename: '[name].css',
+    }),
+    new webpack.ProvidePlugin({
+      React: 'react',
     }),
   ],
 };

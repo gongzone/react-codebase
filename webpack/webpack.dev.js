@@ -1,4 +1,5 @@
-const webpack = require('webpack');
+// const webpack = require('webpack');
+const ReactRefreshWebpackPlugin = require('@pmmmwh/react-refresh-webpack-plugin');
 
 module.exports = {
   mode: 'development',
@@ -11,6 +12,7 @@ module.exports = {
     historyApiFallback: true, // HTML5 History API를 사용할 때, index.html 페이지는 404 응답 대신 제공되어야 합니다.
   },
   plugins: [
+    new ReactRefreshWebpackPlugin(),
     // new webpack.DefinePlugin({
     //   'process.env.name': JSON.stringify('변수'), //env 변수 만들기
     // }),

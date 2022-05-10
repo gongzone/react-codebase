@@ -9,19 +9,27 @@ module.exports = {
     sourceType: 'module',
   },
 
+  settings: {
+    react: {
+      version: 'detect',
+    },
+  },
+
   ignorePatterns: ['**/*.js', 'declarations.d.ts'],
 
   plugins: ['@typescript-eslint'],
 
   extends: [
-    'airbnb-base',
-    'airbnb-typescript/base',
+    'plugin:react/recommended',
+    'plugin:react-hooks/recommended',
+    'plugin:jsx-a11y/recommended',
     'plugin:@typescript-eslint/recommended',
     'plugin:@typescript-eslint/recommended-requiring-type-checking',
     'plugin:import/recommended',
     'prettier',
     'plugin:prettier/recommended',
     'plugin:jest-dom/recommended',
+    'plugin:storybook/recommended',
   ],
 
   rules: {
@@ -31,6 +39,9 @@ module.exports = {
     'import/first': 'off',
     'import/no-unresolved': 'off',
     'import/prefer-default-export': 'off',
+    'react/prop-types': 'off',
+    'react/jsx-uses-react': 'off',
+    'react/react-in-jsx-scope': 'off',
     '@typescript-eslint/no-unused-vars': 'off',
     '@typescript-eslint/no-non-null-assertion': 'off',
   },
