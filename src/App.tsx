@@ -1,11 +1,10 @@
-import { GlobalStyle } from './commons/design-system/global-style';
-import { Button } from '@/commons/design-system/button';
+import { GlobalStyle } from '@/commons/design-system/global-style';
 
 const App = () => {
   return (
     <>
       <GlobalStyle />
-      <Button variant="primary">hi!</Button>
+      <p>hi!</p>
     </>
   );
 };
